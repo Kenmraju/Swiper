@@ -157,7 +157,7 @@ public class MainController extends TabActivity {
 	private void manuallySetActivityLeftMargin(int left) {
 		RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.FILL_PARENT);
         params = (RelativeLayout.LayoutParams)content.getLayoutParams();
-        params.setMargins(left,0,0,0);
+        params.setMargins(left,0,(left*(-1)),0);
         content.setLayoutParams(params);
 	}
 	
